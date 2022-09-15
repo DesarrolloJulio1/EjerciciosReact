@@ -1,17 +1,11 @@
-const user = {
-    name: 'julio',
-    lastname: 'morales',
-    age: 25,
-}
+const showText = () => 'Hola mundo'
+console.log(showText())
 
+const button = document.createElement('button')
+button.innerText = 'Click me'
 
-function printInfo(user) {
-    const {name, age} = user;
-    return '<h1> hola ' + name + ' ' + age + '</h1'
-}
+button.addEventListener('click', () => {
+    alert('clicked')
+})
 
-console.log(printInfo(user))
-
-//document.body.append(button)
-
-document.body.innerHTML = printInfo(user)
+document.body.append(button)
