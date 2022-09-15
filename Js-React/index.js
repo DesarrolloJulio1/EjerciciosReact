@@ -1,11 +1,15 @@
-const showText = () => 'Hola mundo'
-console.log(showText())
-
 const button = document.createElement('button')
-button.innerText = 'Click me'
+button.innerText = 'Click me';
+
+
+const isAuthorized = true;
 
 button.addEventListener('click', () => {
-    alert('clicked')
-})
+    if(isAuthorized){
+        return alert("Esta autorizado");
+    }
+    alert("No esta auatorizado");
+});
+
 
 document.body.append(button)
