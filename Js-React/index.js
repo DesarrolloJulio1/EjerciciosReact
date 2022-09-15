@@ -6,7 +6,8 @@ const user = {
 
 
 function printInfo(user) {
-    return '<h1> hola ' + user.name + ' ' + user.age + '</h1'
+    const {name, age} = user;
+    return '<h1> hola ' + name + ' ' + age + '</h1'
 }
 
 console.log(printInfo(user))
